@@ -1,0 +1,71 @@
+﻿dl,
+dt,
+dd
+{
+    padding: 0;
+    margin: 0 0 5%;
+}
+
+body
+{
+    background-color: grey;
+}
+
+dl
+{
+    width: 20em;
+}
+
+dt
+{
+    float: left;
+    clear: right;
+}
+
+dd:not(:first-of-type)
+{
+    float: right;
+    width: 60%;
+}
+
+.big
+{
+    font-size: 1.5em;
+}
+
+.lightGrey
+{
+    color: #d3d3d3;
+}
+
+.lightYellow
+{
+    color: #ff9;
+}
+
+.white-italic
+{
+    color: #fff;
+    font-style: italic;
+}
+
+#red
+{
+    color: #f00
+}
+
+#darkOrange
+{
+    color: #ff8c00
+}
+
+#circle
+{
+	width: 1em;
+	height: 1em;
+    display: inline-block;
+	background: green;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	border-radius: 50%
+}
