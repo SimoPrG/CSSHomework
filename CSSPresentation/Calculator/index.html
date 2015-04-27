@@ -1,0 +1,637 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Programmer Calculator</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="styles/calculator-style.css" />
+</head>
+<body>
+    <section>
+        <header>
+            <span id="icon">
+                <span></span>
+                <span></span>
+                <span>0</span>
+            </span>
+            <h1>Calculator</h1>
+            <table>
+                <tr>
+                    <td>
+                        <button><span></span></button>
+                    </td>
+                    <td>
+                        <button><span></span></button>
+                    </td>
+                    <td>
+                        <button>x</button>
+                    </td>
+                </tr>
+            </table>
+        </header>
+        <section>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <span>V</span><span>iew</span>
+                        </a>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <span>Standart</span>
+                                    <span>Alt+1</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>Scientific</span>
+                                    <span>Alt+2</span>
+                                </a>
+                            </li>
+                            <li class="selected">
+                                <a href="#">
+                                    <span>Programmer</span>
+                                    <span>Alt+3</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>Statistics</span>
+                                    <span>Alt+4</span>
+                                </a>
+                            </li>
+                            <li class="disabled">
+                                <hr />
+                            </li>
+                            <li class="disabled">
+                                <a href="#">
+                                    <span>History</span>
+                                    <span>Ctrl+H</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>Digit grouping</span>
+                                </a>
+                            </li>
+                            <li class="disabled">
+                                <hr />
+                            </li>
+                            <li class="selected">
+                                <a href="#">
+                                    <span>Basic</span>
+                                    <span>Ctrl+F4</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>Unit conversion</span>
+                                    <span>Ctrl+U</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>Date calculation</span>
+                                    <span>Ctrl+E</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>Worksheets</span>
+                                    <span id="arrow">▶</span>
+                                </a>
+                                <ul>
+                                    <li>
+                                        <a href="#">Mortgage</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Vehicle lease</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Fuel economy (mpg)</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Fuel economy (L/100 km)</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>E</span><span>dit</span>
+                        </a>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <span>Copy</span>
+                                    <span>Ctrl+C</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>Paste</span>
+                                    <span>Ctrl+V</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>H</span><span>elp</span>
+                        </a>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <span>View Help</span>
+                                    <span>F1</span>
+                                </a>
+                            </li>
+                            <li class="disabled">
+                                <hr />
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>About Calculator</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <section>
+                <div id="GlassShield"></div>
+                <form name="Calculator">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th colspan="9">
+                                    <input name="Memory" value="M" />
+                                    <input name="Display" value="0" />
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td colspan="9">
+                                    <table>
+                                        <tr class="dword">
+                                            <td>
+                                                <span>0</span>
+                                                <span>0</span>
+                                                <span>0</span>
+                                                <span>0</span>
+                                            </td>
+                                            <td>
+                                                <span>0</span>
+                                                <span>0</span>
+                                                <span>0</span>
+                                                <span>0</span>
+                                            </td>
+                                            <td>
+                                                <span>0</span>
+                                                <span>0</span>
+                                                <span>0</span>
+                                                <span>0</span>
+                                            </td>
+                                            <td>
+                                                <span>0</span>
+                                                <span>0</span>
+                                                <span>0</span>
+                                                <span>0</span>
+                                            </td>
+                                            <td>
+                                                <span>0</span>
+                                                <span>0</span>
+                                                <span>0</span>
+                                                <span>0</span>
+                                            </td>
+                                            <td>
+                                                <span>0</span>
+                                                <span>0</span>
+                                                <span>0</span>
+                                                <span>0</span>
+                                            </td>
+                                            <td>
+                                                <span>0</span>
+                                                <span>0</span>
+                                                <span>0</span>
+                                                <span>0</span>
+                                            </td>
+                                            <td>
+                                                <span>0</span>
+                                                <span>0</span>
+                                                <span>0</span>
+                                                <span>0</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="4">
+                                                <span>6</span>
+                                                <span>3</span>
+                                                <span></span>
+                                                <span></span>
+                                            </td>
+                                            <td colspan="3">
+                                                <span>4</span>
+                                                <span>7</span>
+                                                <span></span>
+                                                <span></span>
+                                            </td>
+                                            <td>
+                                                <span>&nbsp;</span>
+                                                <span>&nbsp;</span>
+                                                <span>3</span>
+                                                <span>2</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <span>0</span>
+                                                <span>0</span>
+                                                <span>0</span>
+                                                <span>0</span>
+                                            </td>
+                                            <td>
+                                                <span>0</span>
+                                                <span>0</span>
+                                                <span>0</span>
+                                                <span>0</span>
+                                            </td>
+                                            <td>
+                                                <span>0</span>
+                                                <span>0</span>
+                                                <span>0</span>
+                                                <span>0</span>
+                                            </td>
+                                            <td>
+                                                <span>0</span>
+                                                <span>0</span>
+                                                <span>0</span>
+                                                <span>0</span>
+                                            </td>
+                                            <td>
+                                                <span>0</span>
+                                                <span>0</span>
+                                                <span>0</span>
+                                                <span>0</span>
+                                            </td>
+                                            <td>
+                                                <span>0</span>
+                                                <span>0</span>
+                                                <span>0</span>
+                                                <span>0</span>
+                                            </td>
+                                            <td>
+                                                <span>0</span>
+                                                <span>0</span>
+                                                <span>0</span>
+                                                <span>0</span>
+                                            </td>
+                                            <td>
+                                                <span>0</span>
+                                                <span>0</span>
+                                                <span>0</span>
+                                                <span>0</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="4">
+                                                <span>3</span>
+                                                <span>1</span>
+                                                <span></span>
+                                                <span></span>
+                                            </td>
+                                            <td colspan="3">
+                                                <span>1</span>
+                                                <span>5</span>
+                                                <span></span>
+                                                <span></span>
+                                            </td>
+                                            <td>
+                                                <span>&nbsp;</span>
+                                                <span>&nbsp;</span>
+                                                <span>&nbsp;</span>
+                                                <span>0</span>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td rowspan="3">
+                                    <div>
+                                        <input id="r11" name="radio1" type="radio" />
+                                        <label for="r11">Hex</label>
+                                    </div>
+                                    <div>
+                                        <input id="r12" name="radio1" type="radio" checked />
+                                        <label for="r12">Dec</label>
+                                    </div>
+                                    <div>
+                                        <input id="r13" name="radio1" type="radio" />
+                                        <label for="r13">Oct</label>
+                                    </div>
+                                    <div>
+                                        <input id="r14" name="radio1" type="radio" />
+                                        <label for="r14">Bin</label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <button class="blocked">&nbsp;</button>
+                                </td>
+                                <td>
+                                    <button type="button">
+                                        <span class="transition1"></span>
+                                        <span>Mod</span>
+                                    </button>
+                                </td>
+                                <td>
+                                    <button type="button" class="blocked letter">
+                                        <span class="blocked transition1"></span>
+                                        <span>A</span>
+                                    </button>
+                                </td>
+                                <td>
+                                    <button type="button">
+                                        <span class="transition2"></span>
+                                        <span>MC</span>
+                                    </button>
+                                </td>
+                                <td>
+                                    <button type="button">
+                                        <span class="transition2"></span>
+                                        <span>MR</span>
+                                    </button>
+                                </td>
+                                <td>
+                                    <button type="button">
+                                        <span class="transition2"></span>
+                                        <span>MS</span>
+                                    </button>
+                                </td>
+                                <td>
+                                    <button type="button">
+                                        <span class="transition2"></span>
+                                        <span>M+</span>
+                                    </button>
+                                </td>
+                                <td>
+                                    <button type="button">
+                                        <span class="transition2"></span>
+                                        <span>M-</span>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <button type="button">
+                                        <span class="transition1"></span>
+                                        <span>(</span>
+                                    </button>
+                                </td>
+                                <td>
+                                    <button type="button">
+                                        <span class="transition1"></span>
+                                        <span>)</span>
+                                    </button>
+                                </td>
+                                <td>
+                                    <button type="button" class="blocked letter">
+                                        <span class="blocked transition1"></span>
+                                        <span>B</span>
+                                    </button>
+                                </td>
+                                <td>
+                                    <button type="button">
+                                        <span class="transition1"></span>
+                                        <span>&larr;</span>
+                                    </button>
+                                </td>
+                                <td>
+                                    <button type="button">
+                                        <span class="transition1"></span>
+                                        <span>CE</span>
+                                    </button>
+                                </td>
+                                <td>
+                                    <button type="button">
+                                        <span class="transition1"></span>
+                                        <span>C</span>
+                                    </button>
+                                </td>
+                                <td>
+                                    <button type="button">
+                                        <span class="transition1"></span>
+                                        <span>±</span>
+                                    </button>
+                                </td>
+                                <td>
+                                    <button class="blocked">√</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <button type="button">
+                                        <span class="transition1"></span>
+                                        <span>RoL</span>
+                                    </button>
+                                </td>
+                                <td>
+                                    <button type="button">
+                                        <span class="transition1"></span>
+                                        <span>RoR</span>
+                                    </button>
+                                </td>
+                                <td>
+                                    <button type="button" class="blocked letter">
+                                        <span class="blocked transition1"></span>
+                                        <span>C</span>
+                                    </button>
+                                </td>
+                                <td>
+                                    <button type="button" class="number">
+                                        <span class="bin transition1"></span>
+                                        <span>7</span>
+                                    </button>
+                                </td>
+                                <td>
+                                    <button type="button" class="number">
+                                        <span class="oct transition1"></span>
+                                        <span>8</span>
+                                    </button>
+                                </td>
+                                <td>
+                                    <button type="button" class="number">
+                                        <span class="oct transition1"></span>
+                                        <span>9</span>
+                                    </button>
+                                </td>
+                                <td>
+                                    <button type="button" class="operation">
+                                        <span class="transition1"></span>
+                                        <span>/</span>
+                                    </button>
+                                </td>
+                                <td>
+                                    <button class="blocked">%</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td rowspan="3">
+                                    <div>
+                                        <input id="r21" name="radio2" type="radio" checked />
+                                        <label for="r21">Qword</label>
+                                    </div>
+                                    <div>
+                                        <input id="r22" name="radio2" type="radio" />
+                                        <label for="r22">Dword</label>
+                                    </div>
+                                    <div>
+                                        <input id="r23" name="radio2" type="radio" />
+                                        <label for="r23">Word</label>
+                                    </div>
+                                    <div>
+                                        <input id="r24" name="radio2" type="radio" />
+                                        <label for="r24">Byte</label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <button type="button">
+                                        <span class="transition1"></span>
+                                        <span>Or</span>
+                                    </button>
+                                </td>
+                                <td>
+                                    <button type="button">
+                                        <span class="transition1"></span>
+                                        <span>Xor</span>
+                                    </button>
+                                </td>
+                                <td>
+                                    <button type="button" class="blocked letter">
+                                        <span class="blocked transition1"></span>
+                                        <span>D</span>
+                                    </button>
+                                </td>
+                                <td>
+                                    <button type="button" class="number">
+                                        <span class="bin transition1"></span>
+                                        <span>4</span>
+                                    </button>
+                                </td>
+                                <td>
+                                    <button type="button" class="number">
+                                        <span class="bin transition1"></span>
+                                        <span>5</span>
+                                    </button>
+                                </td>
+                                <td>
+                                    <button type="button" class="number">
+                                        <span class="bin transition1"></span>
+                                        <span>6</span>
+                                    </button>
+                                </td>
+                                <td>
+                                    <button type="button" class="operation">
+                                        <span class="transition1"></span>
+                                        <span>*</span>
+                                    </button>
+                                </td>
+                                <td>
+                                    <button class="blocked">1/x</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <button type="button">
+                                        <span class="transition1"></span>
+                                        <span>Lsh</span>
+                                    </button>
+                                </td>
+                                <td>
+                                    <button type="button">
+                                        <span class="transition1"></span>
+                                        <span>Rsh</span>
+                                    </button>
+                                </td>
+                                <td>
+                                    <button type="button" class="blocked letter">
+                                        <span class="blocked transition1"></span>
+                                        <span>E</span>
+                                    </button>
+                                </td>
+                                <td>
+                                    <button type="button" class="number">
+                                        <span class="transition1"></span>
+                                        <span>1</span>
+                                    </button>
+                                </td>
+                                <td>
+                                    <button type="button" class="number">
+                                        <span class="bin transition1"></span>
+                                        <span>2</span>
+                                    </button>
+                                </td>
+                                <td>
+                                    <button type="button" class="number">
+                                        <span class="bin transition1"></span>
+                                        <span>3</span>
+                                    </button>
+                                </td>
+                                <td>
+                                    <button type="button" class="operation">
+                                        <span class="transition1"></span>
+                                        <span>-</span>
+                                    </button>
+                                </td>
+                                <td rowspan="2">
+                                    <button type="button">
+                                        <span class="transition1"></span>
+                                        <span>=</span>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <button type="button">
+                                        <span class="transition1"></span>
+                                        <span>Not</span>
+                                    </button>
+                                </td>
+                                <td>
+                                    <button type="button">
+                                        <span class="transition1"></span>
+                                        <span>And</span>
+                                    </button>
+                                </td>
+                                <td>
+                                    <button type="button" class="blocked letter">
+                                        <span class="blocked transition1"></span>
+                                        <span>F</span>
+                                    </button>
+                                </td>
+                                <td colspan="2">
+                                    <button type="button" class="number">
+                                        <span class="transition1"></span>
+                                        <span>0</span>
+                                    </button>
+                                </td>
+                                <td>
+                                    <button class="blocked">.</button>
+                                </td>
+                                <td>
+                                    <button type="button" class="operation">
+                                        <span class="transition1"></span>
+                                        <span>+</span>
+                                    </button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </form>
+            </section>
+        </section>
+    </section>
+</body>
+</html>
