@@ -1,0 +1,17 @@
+﻿nav ul {
+    list-style-type: none
+}
+
+nav ul ul {
+    display: none;
+    color: #aaa;
+    padding-left: 10px
+}
+
+nav li:hover ul {
+    display: block
+}
+
+nav li:hover div {
+    text-decoration: underline
+}

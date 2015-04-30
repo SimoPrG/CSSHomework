@@ -1,0 +1,86 @@
+﻿body, div, nav, form, label, input, article, h1, p {
+    padding: 0;
+    margin: 0
+}
+
+a {
+    color: inherit;
+    text-decoration: none
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #aaa;
+}
+
+label,
+h1
+{
+    font-family: Georgia, serif
+}
+
+label {
+    color: #fff;
+    font-size: 1.3em
+}
+
+h1 {
+    color: #FDD818;
+    font-weight: normal
+}
+
+strong {
+    font-weight: normal;
+    color: #fff
+}
+
+#container {
+    width: 640px;
+    margin: 0 auto;
+    background-color: #3B3B3B;
+    -ms-border-radius: 5px;
+    border-radius: 5px
+}
+
+nav {
+    background-image: url(sources/display-icon.png), radial-gradient(at bottom, #262626, #3B3B3B);
+    -ms-background-size: contain;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 5px;
+}
+
+form {
+    position: relative;
+    left: 80px
+}
+
+input {
+    margin: 20px 10px
+}
+
+input[type=submit] {
+    width: 50px;
+    height: 25px;
+    background-image: url(sources/go-button.png);
+    -ms-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 1px solid #fff;
+    -ms-border-radius: 5px;
+    border-radius: 5px
+}
+
+article {
+    padding: 10px
+}
+
+h1 {
+    margin-top: 5px;
+    margin-bottom: 15px
+}
+
+p {
+    font-size: 0.9em;
+    width: 560px
+}
