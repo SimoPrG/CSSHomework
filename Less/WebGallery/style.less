@@ -1,0 +1,27 @@
+﻿body, form, label, input, img {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+    label img {
+        height: 120px;
+        margin: 20px 0;
+    }
+
+    input {
+        display: none;
+
+        & + img{
+            display: none
+        }
+
+        &:checked + img{
+            display: block;
+            height: 360px
+        }
+    }
